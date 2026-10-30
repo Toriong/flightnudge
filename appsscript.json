@@ -1,0 +1,46 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Calendar",
+        "version": "v3",
+        "serviceId": "calendar"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/calendar.events",
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/script.scriptapp",
+    "https://www.googleapis.com/auth/script.locale"
+  ],
+  "addOns": {
+    "calendar": {
+      "homepageTrigger": {
+        "runFunction": "onHomePage",
+        "enabled": true
+      }
+    },
+    "common": {
+      "name": "FlightNudge",
+      "logoUrl": "https://raw.githubusercontent.com/Toriong/flightnudge/dev/branding/icon-128.png",
+      "layoutProperties": {
+        "primaryColor": "#9DD6FC",
+        "secondaryColor": "#CAA0FA"
+      },
+      "homepageTrigger": {
+        "runFunction": "onHomePage",
+        "enabled": true
+      },
+      "universalActions": [
+        {
+          "label": "Settings",
+          "runFunction": "onSettings"
+        }
+      ]
+    }
+  }
+}
