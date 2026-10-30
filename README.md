@@ -77,6 +77,12 @@ npx clasp create --type standalone --title "FlightNudge"
 
 4. **Deploy to Google Apps Script**
 
+**Note on Logo URL**: The `appsscript.json` manifest references the add-on logo at:
+```
+https://raw.githubusercontent.com/Toriong/flightnudge/dev/branding/icon-128.png
+```
+This URL resolves after the PR is merged to `dev`. For production deployment to `main`, update the logoUrl in `appsscript.json` to point to the `main` branch, or host the logo elsewhere.
+
 ```bash
 # Push code to Apps Script
 npm run push

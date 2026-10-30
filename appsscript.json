@@ -19,18 +19,14 @@
   ],
   "addOns": {
     "calendar": {
-      "name": "FlightNudge",
-      "logoUrl": "https://www.driveio.io/flightnudge-logo.png",
-      "conferenceSolution": [],
-      "eventAttachmentTrigger": {},
-      "currentEventAccess": "READ_WRITE",
       "homepageTrigger": {
+        "runFunction": "onHomePage",
         "enabled": true
       }
     },
     "common": {
       "name": "FlightNudge",
-      "logoUrl": "https://www.driveio.io/flightnudge-logo.png",
+      "logoUrl": "https://raw.githubusercontent.com/Toriong/flightnudge/dev/branding/icon-128.png",
       "layoutProperties": {
         "primaryColor": "#9DD6FC",
         "secondaryColor": "#CAA0FA"
