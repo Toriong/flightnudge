@@ -1,0 +1,50 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Calendar",
+        "version": "v3",
+        "serviceId": "calendar"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/calendar.events",
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/script.scriptapp",
+    "https://www.googleapis.com/auth/script.locale"
+  ],
+  "addOns": {
+    "calendar": {
+      "name": "FlightNudge",
+      "logoUrl": "https://www.driveio.io/flightnudge-logo.png",
+      "conferenceSolution": [],
+      "eventAttachmentTrigger": {},
+      "currentEventAccess": "READ_WRITE",
+      "homepageTrigger": {
+        "enabled": true
+      }
+    },
+    "common": {
+      "name": "FlightNudge",
+      "logoUrl": "https://www.driveio.io/flightnudge-logo.png",
+      "layoutProperties": {
+        "primaryColor": "#9DD6FC",
+        "secondaryColor": "#CAA0FA"
+      },
+      "homepageTrigger": {
+        "runFunction": "onHomePage",
+        "enabled": true
+      },
+      "universalActions": [
+        {
+          "label": "Settings",
+          "runFunction": "onSettings"
+        }
+      ]
+    }
+  }
+}

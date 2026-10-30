@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(209,127,247,1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(157,214,252,1);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#flightGradient)" />
+  
+  <!-- Flight icon (airplane) -->
+  <g transform="translate(256, 256) rotate(-45)">
+    <!-- Fuselage -->
+    <path d="M -20 0 L 80 0 L 90 10 L 80 20 L -20 20 Z" fill="white" opacity="0.95"/>
+    
+    <!-- Wings -->
+    <path d="M 0 0 L -60 -80 L -40 -85 L 30 0 Z" fill="white" opacity="0.95"/>
+    <path d="M 0 20 L -60 100 L -40 105 L 30 20 Z" fill="white" opacity="0.95"/>
+    
+    <!-- Tail -->
+    <path d="M -20 0 L -50 -30 L -45 -35 L -20 5 Z" fill="white" opacity="0.9"/>
+    <path d="M -20 20 L -50 50 L -45 55 L -20 15 Z" fill="white" opacity="0.9"/>
+    
+    <!-- Nose -->
+    <circle cx="85" cy="10" r="8" fill="white"/>
+  </g>
+  
+  <!-- Notification bell/reminder icon (small, bottom right) -->
+  <g transform="translate(380, 380)">
+    <circle cx="0" cy="0" r="45" fill="rgb(202,160,250)" opacity="0.95"/>
+    <path d="M -15 -8 L -15 2 C -15 8 -10 12 0 12 C 10 12 15 8 15 2 L 15 -8 L 12 -8 L 12 -18 C 12 -24 7 -28 0 -28 C -7 -28 -12 -24 -12 -18 L -12 -8 Z" fill="white"/>
+    <circle cx="0" cy="16" r="3" fill="white"/>
+  </g>
+</svg>
